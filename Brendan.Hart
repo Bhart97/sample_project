@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Brendan Hart Cloud Computing Practice</title>
+</head>
+<body>
+Test for CDE
+</body>
+</html>
+EOF
+
+date_time=$(date +"%m-%d-%y %T")
+a="Hello, this is an example Bash script."
+
+
+sed -i -e "\@</body>@i\\<br>$a<br>" *.html
